@@ -90,7 +90,7 @@ namespace Experian.Api.Client
                     {
                         return serializer.Deserialize<TResponse>(jsonReader);
                     }
-                    catch (Exception)
+                    catch (Exception e)
                     {
                         var responseType = typeof(TResponse);
 
